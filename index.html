@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <meta name="milestone" content="Portfolio">
+    <!-- TODO: Replace this with your title -->
+    <title>Smit Desai</title>  
+    <!-- 
+			TODO: Add Bootstrap CSS link tag from: 
+      https://getbootstrap.com/
+		-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- 
+			TODO: Add Bootstrap Icons link tag from: 
+			https://icons.getbootstrap.com/
+			(Remember, the CDN link is towards the bottom of the page!)
+		-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom styles (these can extend the default Bootstrap styles) -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="scroll-top"
+  data-bs-spy="scroll"
+  data-bs-target=".navbar"
+  data-bs-offset="100">
+
+    <!-- TODO: Paste Navbar code and customize links -->  
+  
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+      <div class="container">
+        <a href="#hero-section" class="navbar-brand">
+          <i class="bi bi-house-door"></i>
+        </a>
+        
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="nav-collapse" class="collapse navbar-collapse">
+          <div class="navbar-nav ms-auto">
+            <a href="#mission-section" class="nav-link">Mission</a>
+            <a href="#skills-section" class="nav-link">Skills</a>
+            <a href="#contact-section" class="nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="hero-section" class="d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+        <div class="my-image mx-auto">
+          <img src="img/smitHeadsshot.jpg" alt="Profile Picture" class="img-fluid">
+        </div>
+        <!-- <div class="hero-text mt-4">
+          <h1>Smit Desai</h1>
+          <p>Building Intelligent Systems with Scalable Code, Data, and Cloud.</p>
+          <a href="resume/smit_resume.pdf" target="_blank" class="btn btn-outline-custom mt-3">View Resume</a>
+        </div> -->
+        <div class="hero-text mt-4">
+          <h1 class="mb-3">Smit Desai</h1>
+          <p class="mb-3">Building Intelligent Systems with Scalable Code, Data, and Cloud.</p>
+          <a href="resume/smit_resume.pdf" target="_blank" class="btn btn-outline-custom">View Resume</a>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+  	<!-- Mission/Meet-me section -->
+    <section id="mission-section" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">My Mission</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/missionImage.jpg" alt="Mission Image" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <!-- Small screen paragraph (visible on xs and sm) -->
+            <p class="d-lg-none text-center">
+              I am passionate about building scalable, efficient, and impactful software solutions that enhance user experiences and solve real-world challenges. With a strong foundation in backend development, distributed systems, and AI-driven applications, I thrive in designing high-performance architectures that power modern technology.
+            </p>
+    
+            <!-- Large screen paragraphs (visible on md and up) -->
+            <div class="d-none d-lg-block">
+              <div class="mission-text-container">
+                <p>
+                  As a Computer Science undergraduate at Arizona State University, I have worked on diverse projects, from AI-driven productivity monitoring tools to NASA-sponsored WebXR experiences. My experience spans backend development, cloud computing, and full-stack solutions, where I enjoy optimizing performance, designing APIs, and collaborating in Agile teams.
+                </p>
+                <p>
+                  My mission is to create software that not only meets technical excellence but also drives meaningful impact. Whether it’s crafting robust applications, contributing to open-source communities, or solving complex engineering problems, I am committed to continuous learning and innovation in the field of software development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+    
+  
+    <!-- Skills section -->
+    <section id="skills-section" class="py-5">
+      <div class="container">
+          <h2 class="text-center mb-5">Skills</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+  
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <i class="bi bi-filetype-html fs-1 text-primary"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">HTML</h5>
+                          <p class="card-text">Structuring the web's content using modern semantic HTML.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <i class="bi bi-filetype-css fs-1 text-info"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">CSS</h5>
+                          <p class="card-text">Presenting beautiful web designs and interactions using modern CSS.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <i class="bi bi-bootstrap-fill fs-1 text-secondary"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">Bootstrap</h5>
+                          <p class="card-text">Rapidly developing responsive websites using the web's most popular framework.</p>
+                      </div>
+                  </div>
+              </div>
+  
+               <div class="col">
+                  <div class="card h-100 text-center">
+                      <i class="bi bi-filetype-js fs-1 text-warning"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">JavaScript</h5>
+                          <p class="card-text">Making interactive experiences, games, web apps, and more using JavaScript.</p>
+                      </div>
+                  </div>
+              </div>
+  
+               <div class="col">
+                  <div class="card h-100 text-center">
+                      <i class="devicon-go-line fs-1 text-info mt-2" style="font-size: 2rem;"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">Go</h5>
+                          <p class="card-text">Efficient and Scalable Backend Systems.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <i class="bi bi-filetype-py fs-1 text-warning"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">Python</h5>
+                          <p class="card-text">Versatile for scripting, automation, and data analysis.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <i class="bi bi-filetype-java fs-1 text-danger"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">Java</h5>
+                          <p class="card-text">Robust for enterprise-level applications.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card h-100 text-center">
+                     <!-- <i class="bi bi-filetype-cpp fs-1 text-primary"></i> -->
+                     <i class="devicon-cplusplus-line fs-1 text-primary mt-2" style="font-size: 2rem;"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">C++</h5>
+                          <p class="card-text">High-performance applications and systems programming.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <i class="bi bi-filetype-jsx fs-1 text-primary"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">React</h5>
+                          <p class="card-text">Building dynamic UIs with reusable components.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <i class="bi bi-cloud-fill fs-1 text-secondary"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">AWS</h5>
+                          <p class="card-text">Cloud computing services for scalable infrastructure.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <i class="bi bi-git fs-1 text-dark"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">Git</h5>
+                          <p class="card-text">Version control for collaborative software development.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card h-100 text-center">
+                     <i class="bi bi-database-fill fs-1 text-info"></i>
+                      <div class="card-body">
+                          <h5 class="card-title">PostgreSQL</h5>
+                          <p class="card-text">Robust open-source relational database.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+  
+      
+  
+    <!-- Contact Section -->
+    <section id="contact-section" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Connect With Me</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3 mb-md-0 text-center">
+            <a href="https://www.linkedin.com/in/smitldesai4372/" target="_blank" class="text-decoration-none contact-icon linked-in">
+              <i class="bi bi-linkedin fs-1"></i>
+              <p>LinkedIn</p>
+            </a>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0 text-center">
+            <a href="https://github.com/smit4372" target="_blank" class="text-decoration-none contact-icon git-hub">
+              <i class="bi bi-github fs-1"></i>
+                <p>GitHub</p>
+            </a>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="mailto:smitdesai129@gmail.com" class="text-decoration-none contact-icon email">
+              <i class="bi bi-envelope fs-1"></i>
+                <p>Email</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer section -->
+    <section id="footer-section" class="bg-dark text-center d-flex justify-content-center align-items-center">
+      <p class="text-light mb-0">© Smit Lagdhirbhai Desai 2025</p>
+    </section>
+
+
+  
+    <!-- 
+  		TODO: Paste Bootstrap JavaScript script tag from:
+      https://getbootstrap.com/
+  	-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
