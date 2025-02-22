@@ -104,15 +104,15 @@ body {
     padding: 20px 0;
 }
 
-#contact-section{
+/* #contact-section{
     background-color: #f8f9fa;
-}
+} */
 
 /*Contact Icons*/
 .contact-icon {
     display: inline-block;
     margin: 0 10px;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     transition: transform 0.2s ease; /* Adds a smooth transition */
 }
 
@@ -141,3 +141,21 @@ body {
 .email:hover {
     color: #c71610; /* A shade of red for email */
 }
+
+#projects-section .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #projects-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+
+.card-img-top {
+    width: 100%;          /* Ensures the image spans the full card width */
+    height: 200px;        /* Choose a consistent height for all images */
+    object-fit: cover;    /* Crops the image to fill the area, preserving aspect ratio */
+    object-position: top; /* Optional: you can adjust which part of the image is visible */
+}
+
