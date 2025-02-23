@@ -18,6 +18,14 @@ body {
     color: white;
 }
 
+#hero-section {
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-background-position: center;
+    background-position: center;
+}
+
+
 .my-image {
     width: 180px;
     height: 180px;
