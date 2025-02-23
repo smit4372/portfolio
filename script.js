@@ -7,3 +7,12 @@ function onScroll() {
     document.body.classList.add("scroll-top");
   }
 }
+
+
+document.addEventListener("scroll", function () {
+  let scrollPosition = window.scrollY;
+  let parallaxElement = document.querySelector(".hero-background");
+
+  // Move background up at a slower rate for parallax effect
+  parallaxElement.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+});

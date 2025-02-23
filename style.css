@@ -7,7 +7,7 @@ body {
     color: #333; 
 }
 
-#hero-section {
+/* #hero-section {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.75)), url("img/heroImage.jpg");
     position: relative;
     background-size: cover;
@@ -23,7 +23,44 @@ body {
     background-size: cover;
     -webkit-background-position: center;
     background-position: center;
+} */
+
+#hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.75)), url("img/heroImage.jpg") center/cover no-repeat;
+    z-index: -1;
+    transform: translateY(0px);
+    will-change: transform;
+}
+
+/* Text and other content inside the hero */
+.hero-content {
+    text-align: center;
+    z-index: 1;
+}
+
+/* Ensure parallax effect works on mobile */
+@media (max-width: 1024px) {
+    .hero-background {
+        background-attachment: scroll; /* Fallback for mobile */
+    }
+}
+
 
 
 .my-image {
