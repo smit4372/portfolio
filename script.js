@@ -8,12 +8,8 @@ function onScroll() {
   }
 }
 
-
-document.addEventListener("scroll", function () {
-  let scrollPosition = window.scrollY;
-  let background = document.querySelector(".parallax-background");
-
-  // Adjust background scroll effect (smooth parallax effect)
-  background.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+window.addEventListener("scroll", function () {
+  let scrolledY = window.scrollY;
+  document.getElementById("container").style.backgroundPosition = "center " + (scrolledY * 0.5) + "px";
 });
 
