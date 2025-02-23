@@ -11,8 +11,9 @@ function onScroll() {
 
 document.addEventListener("scroll", function () {
   let scrollPosition = window.scrollY;
-  let parallaxElement = document.querySelector(".hero-background");
+  let background = document.querySelector(".parallax-background");
 
-  // Move background up at a slower rate for parallax effect
-  parallaxElement.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+  // Adjust background scroll effect (smooth parallax effect)
+  background.style.transform = `translateY(${scrollPosition * 0.5}px)`;
 });
+

@@ -25,6 +25,7 @@ body {
     background-position: center;
 } */
 
+/* Hero Section */
 #hero-section {
     position: relative;
     width: 100%;
@@ -34,30 +35,31 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    text-align: center;
 }
 
-.hero-background {
-    position: absolute;
+/* Parallax Background */
+.parallax-background {
+    position: fixed;  /* FIXED Background */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.75)), url("img/heroImage.jpg") center/cover no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background: url("img/heroImage.jpg") center/cover no-repeat;
     z-index: -1;
-    transform: translateY(0px);
     will-change: transform;
 }
 
-/* Text and other content inside the hero */
+/* Content */
 .hero-content {
-    text-align: center;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
 }
 
-/* Ensure parallax effect works on mobile */
+/* Mobile Fix */
 @media (max-width: 1024px) {
-    .hero-background {
-        background-attachment: scroll; /* Fallback for mobile */
+    .parallax-background {
+        position: absolute; /* Fix iOS Background issue */
     }
 }
 
