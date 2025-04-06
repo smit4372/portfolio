@@ -7,7 +7,7 @@ body {
     color: #333; 
 }
 
-#hero-section {
+/* #hero-section {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.75)), url("img/heroImage.jpg");
     position: relative;
     background-size: cover;
@@ -23,9 +23,26 @@ body {
     background-size: cover;
     -webkit-background-position: center;
     background-position: center;
+} */
+
+#hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.75)), url("img/heroImage.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This creates the parallax effect */
+    height: 100vh;
+    color: white;
+    -webkit-background-size: cover;
 }
 
-
+/* For medium and small screens, remove the parallax effect */
+@media screen and (max-width: 992px) {
+    #hero-section {
+        background-attachment: scroll; /* Changes from fixed to normal scrolling */
+    }
+}
 
 .my-image {
     width: 180px;
